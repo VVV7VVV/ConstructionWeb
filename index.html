@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNV CONSTRUCTION - Thiết kế kết cấu thép & Bản vẽ kỹ thuật</title>
+<meta name="description" content="Website mẫu theo form dnvconstruction.com.vn: thiết kế kết cấu thép, triển khai bản vẽ kỹ thuật. Tông xanh da trời - trắng, song ngữ Việt - Nhật, có trang Admin.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Top bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>📞 <span data-i18n="phone_label">Hotline</span>: <a href="tel:0392506586" id="topPhone">0392506586</a></span>
+    <span>✉️ <a href="mailto:dnvc@dnvconstruction.com.vn" id="topEmail">dnvc@dnvconstruction.com.vn</a></span>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="vi" title="Tiếng Việt">🇻🇳 VI</button>
+      <button class="lang-btn" data-lang="ja" title="日本語">🇯🇵 JP</button>
+    </div>
+  </div>
+</div>
+
+<!-- Header: logo ở giữa, menu chia 2 bên như web gốc -->
+<header class="header">
+  <div class="container header-inner">
+    <nav class="nav nav-left">
+      <a href="#/home" data-nav="home" data-i18n="nav_home">TRANG CHỦ</a>
+      <div class="dropdown">
+        <a href="#/about" data-nav="about" data-i18n="nav_about">GIỚI THIỆU ▾</a>
+        <div class="dropdown-menu">
+          <a href="#/about" data-i18n="nav_about_us">Về chúng tôi</a>
+          <a href="#/capacity" data-i18n="nav_capacity">Năng lực và nhân sự</a>
+        </div>
+      </div>
+      <a href="#/services" data-nav="services" data-i18n="nav_services">DỊCH VỤ</a>
+    </nav>
+    <a href="#/home" class="logo">
+      <span class="logo-dnv">DNV</span>
+      <span class="logo-sub">CONSTRUCTION</span>
+      <small data-i18n="slogan">Kiến tạo công trình vững bước tương lai</small>
+    </a>
+    <nav class="nav nav-right">
+      <a href="#/projects" data-nav="projects" data-i18n="nav_projects">DỰ ÁN</a>
+      <a href="#/news" data-nav="news" data-i18n="nav_news">TIN TỨC</a>
+      <a href="#/contact" data-nav="contact" data-i18n="nav_contact">LIÊN HỆ</a>
+      <!-- Nút Quản trị đã ẩn theo yêu cầu: tự truy cập bằng #/admin -->
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#/home" data-i18n="nav_home">TRANG CHỦ</a>
+    <a href="#/about" data-i18n="nav_about_us">Về chúng tôi</a>
+    <a href="#/capacity" data-i18n="nav_capacity">Năng lực và nhân sự</a>
+    <a href="#/services" data-i18n="nav_services">DỊCH VỤ</a>
+    <a href="#/projects" data-i18n="nav_projects">DỰ ÁN</a>
+    <a href="#/news" data-i18n="nav_news">TIN TỨC</a>
+    <a href="#/contact" data-i18n="nav_contact">LIÊN HỆ</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ TRANG CHỦ ============ -->
+  <section class="page active" data-page="home">
+    <div class="hero" id="hero">
+      <div class="hero-slides" id="heroSlides"></div>
+      <div class="hero-content">
+        <h1 id="heroTitle" data-i18n="hero_title">THIẾT KẾ KẾT CẤU THÉP<br>CHÍNH XÁC - HIỆU QUẢ - ĐÚNG TIÊU CHUẨN</h1>
+        <p id="heroSub" data-i18n="hero_sub">Triển khai bản vẽ kỹ thuật cho nhà máy, nhà công nghiệp và công trình cao tầng.</p>
+        <div class="hero-actions">
+          <a href="#/services" class="btn" data-i18n="hero_btn1">Xem dịch vụ</a>
+          <a href="#/contact" class="btn btn-outline" data-i18n="hero_btn2">Gửi yêu cầu</a>
+        </div>
+      </div>
+      <button class="hero-arrow prev" id="heroPrev">‹</button>
+      <button class="hero-arrow next" id="heroNext">›</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+
+    <div class="container section">
+      <h2 class="section-title" data-i18n="about_title">VỀ CHÚNG TÔI</h2>
+      <p class="section-lead" id="homeAboutLead" data-i18n="about_lead">Doanh nghiệp chuyên sâu về thiết kế kết cấu thép và triển khai bản vẽ kỹ thuật, hướng tới trở thành đơn vị triển khai bản vẽ kết cấu thép hàng đầu Việt Nam, phục vụ khách hàng trong nước và quốc tế.</p>
+      <div class="grid-3" id="homeAboutCards"></div>
+      <div class="center"><a href="#/about" class="btn" data-i18n="read_more">Xem thêm →</a></div>
+    </div>
+
+    <div class="section bg-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="services_title">DỊCH VỤ</h2>
+        <div class="grid-3" id="homeServices"></div>
+        <div class="center"><a href="#/services" class="btn" data-i18n="all_services">Tất cả dịch vụ →</a></div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <h2 class="section-title" data-i18n="projects_title">DỰ ÁN TIÊU BIỂU</h2>
+      <div class="filters" id="homeProjectFilters">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tất cả</button>
+        <button class="filter-btn" data-filter="done" data-i18n="filter_done">Đã hoàn thành</button>
+        <button class="filter-btn" data-filter="doing" data-i18n="filter_doing">Đang thi công</button>
+      </div>
+      <div class="grid-3" id="homeProjects"></div>
+      <div class="center"><a href="#/projects" class="btn" data-i18n="all_projects">Tất cả dự án →</a></div>
+    </div>
+
+    <div class="section bg-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="news_title">TIN TỨC</h2>
+        <div class="grid-3" id="homeNews"></div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <h2 class="section-title" data-i18n="partners_title">ĐỐI TÁC</h2>
+      <div class="partners" id="partners"></div>
+    </div>
+  </section>
+
+  <!-- ============ VỀ CHÚNG TÔI ============ -->
+  <section class="page" data-page="about">
+    <div class="page-banner"><h1 data-i18n="about_title">VỀ CHÚNG TÔI</h1></div>
+    <div class="container section">
+      <img id="aboutImage" src="" alt="Giới thiệu" style="width:100%;height:320px;object-fit:cover;border-radius:14px;margin-bottom:20px">
+      <p id="aboutMainText" style="font-size:18px"></p>
+      <h2 data-i18n="director_title">Lời ngỏ của Giám đốc</h2>
+      <p id="aboutDirectorText" data-i18n="director_text">Nội dung mẫu: chúng tôi đặt sự chính xác của từng bản vẽ lên hàng đầu, làm việc có trách nhiệm với từng công trình và luôn cải tiến quy trình để bàn giao đúng tiến độ cho khách hàng.</p>
+      <h2 data-i18n="vision_title">Tầm nhìn - Sứ mệnh</h2>
+      <p id="aboutVisionText" data-i18n="vision_text">Tầm nhìn mẫu: trở thành đơn vị triển khai bản vẽ kết cấu thép hàng đầu Việt Nam và là đối tác tin cậy của doanh nghiệp trong nước, Nhật Bản và quốc tế. Sứ mệnh mẫu: cung cấp bản vẽ chính xác, tối ưu cho thi công và đúng tiến độ.</p>
+      <h2 data-i18n="values_title">Giá trị cốt lõi</h2>
+      <div class="values" id="values"></div>
+    </div>
+  </section>
+
+  <!-- ============ NĂNG LỰC ============ -->
+  <section class="page" data-page="capacity">
+    <div class="page-banner"><h1 data-i18n="nav_capacity">NĂNG LỰC VÀ NHÂN SỰ</h1></div>
+    <div class="container section">
+      <p id="capacityText" data-i18n="capacity_text">Đội ngũ kỹ sư am hiểu tiêu chuẩn thiết kế, nguyên lý chế tạo và lắp dựng kết cấu thép, thành thạo các phần mềm chuyên ngành dưới đây (nội dung mẫu, bạn thay bằng hồ sơ thật sau).</p>
+      <div class="chips" id="softwareChips"></div>
+      <div class="grid-3" id="capacityCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ DỊCH VỤ ============ -->
+  <section class="page" data-page="services">
+    <div class="page-banner"><h1 data-i18n="services_title">DỊCH VỤ</h1></div>
+    <div class="container section">
+      <input class="search-input" id="serviceSearch" data-i18n-placeholder="search_placeholder" placeholder="Tìm dịch vụ...">
+      <div class="filters" id="serviceCategoryFilters"></div>
+      <div class="grid-3" id="servicesList"></div>
+    </div>
+  </section>
+
+  <!-- ============ DỰ ÁN ============ -->
+  <section class="page" data-page="projects">
+    <div class="page-banner"><h1 data-i18n="projects_title">DỰ ÁN</h1></div>
+    <div class="container section">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all" data-page-filter="projects" data-i18n="filter_all">Tất cả</button>
+        <button class="filter-btn" data-filter="done" data-page-filter="projects" data-i18n="filter_done">Đã hoàn thành</button>
+        <button class="filter-btn" data-filter="doing" data-page-filter="projects" data-i18n="filter_doing">Đang thi công</button>
+      </div>
+      <div class="grid-3" id="projectsList"></div>
+    </div>
+  </section>
+
+  <!-- ============ TIN TỨC ============ -->
+  <section class="page" data-page="news">
+    <div class="page-banner"><h1 data-i18n="news_title">TIN TỨC</h1></div>
+    <div class="container section"><div class="grid-3" id="newsList"></div></div>
+  </section>
+
+  <!-- ============ LIÊN HỆ ============ -->
+  <section class="page" data-page="contact">
+    <div class="page-banner"><h1 data-i18n="contact_title">LIÊN HỆ VỚI CHÚNG TÔI</h1></div>
+    <div class="container section contact-grid">
+      <form id="contactForm" class="card form">
+        <h2 data-i18n="send_request">GỬI YÊU CẦU</h2>
+        <label data-i18n="form_name">Họ và tên *</label><input name="name" required>
+        <label data-i18n="form_phone">Số điện thoại *</label><input name="phone" required>
+        <label>Email</label><input name="email" type="email">
+        <label data-i18n="form_subject">Tiêu đề</label><input name="subject">
+        <label data-i18n="form_content">Nội dung *</label><textarea name="content" rows="5" required></textarea>
+        <button class="btn" type="submit" data-i18n="form_send">Gửi tin nhắn</button>
+        <p class="form-msg" id="contactMsg"></p>
+      </form>
+      <div class="card">
+        <h2 data-i18n="meet_direct">BẠN CẦN GẶP TRỰC TIẾP</h2>
+        <p>📍 <span id="contactAddress"></span></p>
+        <p>📞 <span id="contactPhone"></span></p>
+        <p>✉️ <span id="contactEmail"></span></p>
+        <div class="map-placeholder" data-i18n="map_placeholder">Bản đồ mẫu - thay bằng Google Maps thật sau</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADMIN ============ -->
+  <section class="page" data-page="admin">
+    <div class="page-banner"><h1>ADMIN</h1></div>
+    <div class="container section">
+      <div id="loginBox" class="card form narrow">
+        <h2 data-i18n="admin_login">Đăng nhập quản trị</h2>
+        <p class="note" data-i18n="admin_demo_note">Bản demo: đổi mật khẩu trong file js/app.js trước khi đưa lên thật.</p>
+        <p class="note">Truy cập trang này bằng cách thêm <b>#/admin</b> vào cuối địa chỉ web, ví dụ: <code>index.html#/admin</code></p>
+        <label data-i18n="admin_user">Tài khoản</label><input id="adminUser" autocomplete="username">
+        <label data-i18n="admin_pass">Mật khẩu</label><input id="adminPass" type="password" autocomplete="current-password">
+        <button class="btn" id="loginBtn" data-i18n="admin_login_btn">Đăng nhập</button>
+        <p class="form-msg error" id="loginMsg"></p>
+      </div>
+      <div id="adminBox" class="hidden">
+        <div class="admin-head">
+          <h2 data-i18n="admin_welcome">Bảng quản trị</h2>
+          <div><button class="btn btn-outline" id="resetBtn" data-i18n="admin_reset">Khôi phục dữ liệu mẫu</button>
+          <button class="btn" id="logoutBtn" data-i18n="admin_logout">Đăng xuất</button></div>
+        </div>
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="home" data-i18n="nav_home">Trang chủ - Slide</button>
+          <button class="tab-btn" data-tab="about" data-i18n="nav_about_us">Giới thiệu</button>
+          <button class="tab-btn" data-tab="capacity" data-i18n="nav_capacity">Năng lực</button>
+          <button class="tab-btn" data-tab="partners" data-i18n="partners_title">Đối tác</button>
+          <button class="tab-btn" data-tab="services" data-i18n="nav_services">Dịch vụ</button>
+          <button class="tab-btn" data-tab="projects" data-i18n="nav_projects">Dự án</button>
+          <button class="tab-btn" data-tab="news" data-i18n="nav_news">Tin tức</button>
+          <button class="tab-btn" data-tab="contactInfo" data-i18n="nav_contact">Liên hệ</button>
+          <button class="tab-btn" data-tab="messages" data-i18n="admin_messages">Tin nhắn</button>
+        </div>
+        <div id="adminContent"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><h3>DNV CONSTRUCTION</h3><p data-i18n="footer_desc">Thiết kế kết cấu thép và triển khai bản vẽ kỹ thuật.</p></div>
+    <div><h3 data-i18n="footer_contact">Liên hệ</h3><p id="footerContact"></p></div>
+    <div><h3 data-i18n="footer_links">Liên kết</h3>
+      <p><a href="#/services" data-i18n="nav_services">Dịch vụ</a> · <a href="#/projects" data-i18n="nav_projects">Dự án</a> · <a href="#/news" data-i18n="nav_news">Tin tức</a></p>
+    </div>
+  </div>
+  <p class="copyright">Copyright © 2025 DNV CONSTRUCTION. All rights reserved. | <span data-i18n="sample_note">Ảnh và nội dung mẫu, thay sau.</span></p>
+</footer>
+
+<!-- Nút nổi: bình thường chỉ hiện icon tròn, rê chuột vào mới hiện đầy đủ chữ -->
+<div class="float-stack">
+  <a class="float-btn zalo-btn" id="zaloBtn" href="https://zalo.me/0392506586" target="_blank" rel="noopener"><span class="float-icon">💬</span><span class="float-label">Chat Zalo</span></a>
+  <a class="float-btn call-btn" id="callBtn" href="tel:0392506586"><span class="float-icon">📞</span><span class="float-label" data-i18n="call_now">Gọi ngay</span></a>
+</div>
+
+<!-- Thông báo thêm/sửa/xóa thành công -->
+<div class="toast hidden" id="toast"></div>
+
+<!-- Modal chi tiết -->
+<div class="modal hidden" id="modal"><div class="modal-box"><button class="modal-close" id="modalClose">✕</button><div id="modalBody"></div></div></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
